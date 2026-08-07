@@ -1,0 +1,14 @@
+build/
+build_*/
+models/
+engines/
+*.engines/
+*.onnx/
+*.plan/
+
+__pycache__/
+*.pyc/
+
+results/raw/
+.vscode/
+
