@@ -1,14 +1,69 @@
+# -------------------------
+# Build
+# -------------------------
 build/
 build_*/
-models/
-engines/
-*.engines/
-*.onnx/
-*.plan/
+cmake-build-*/
 
+# -------------------------
+# Python
+# -------------------------
 __pycache__/
-*.pyc/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-results/raw/
+# -------------------------
+# IDE
+# -------------------------
 .vscode/
+.idea/
 
+# -------------------------
+# Raw datasets
+# -------------------------
+datasets/raw/
+
+# -------------------------
+# Models / checkpoints
+# -------------------------
+models/
+checkpoints/
+artifacts/
+
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# -------------------------
+# ONNX / TensorRT artifacts
+# -------------------------
+engines/
+
+*.onnx
+*.engine
+*.plan
+
+# -------------------------
+# Profiling artifacts
+# -------------------------
+*.nsys-rep
+*.ncu-rep
+*.qdrep
+
+# -------------------------
+# Temporary / logs
+# -------------------------
+results/raw/
+results/logs/
+*.log
+
+# -------------------------
+# OS temporary files
+# -------------------------
+.DS_Store
+Thumbs.db
